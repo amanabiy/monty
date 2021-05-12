@@ -22,18 +22,16 @@ void _add(stack_t **h, unsigned int line_number)
  * @line_number: line of command
  */
 void _sub(stack_t **h, unsigned int line_number)
-{	int result;
-
-	if (!h || !*h || !((*h)->next))
+{
+	if (*h == NULL || (*h)->next == NULL)
 	{
-		fprintf(stderr, "L%d: can't sub, stack too short\n", line_number);
-		status = EXIT_FAILURE;
-		return;
+		printf("L%u: can't sub, stack too short\n", line_number);
+		exit(EXIT_FAILURE);
 	}
-
-	result = ((*h)->next->n) - ((*h)->n);
-	pop(h, line_number);/*For top node*/
-	(*h)->n = result;
+	(*h)->next->n -= (*h)->n;
+	(*h) = (*h)->next;
+	free((*h)->prev);
+	(*h)->prev = NULL;
 }
 /**
  * _mul - multiply second node and top node
