@@ -18,5 +18,5 @@ $ ./monty bytecodes/000.m
 - Style guidelines: Betty
 
 ### Author
-Amanuel Sisay     [![M](https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/30px-Twitter_Bird.svg.png)](https://twitter.com/amanabiy_as)
-Ammanuel Awol
+- Amanuel Sisay     [![M](https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/30px-Twitter_Bird.svg.png)](https://twitter.com/amanabiy_as)
+- Amanuel Awol
